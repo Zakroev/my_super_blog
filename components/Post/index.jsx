@@ -19,12 +19,7 @@ const Post = ({ className, image, title, description, slug }) => {
       </Title>
       <div className={styles.postContent}>
         <div className={styles.postImage}>
-          <Image
-            src={urlFor(image).url()}
-            alt={image.caption}
-            width="100"
-            height="100"
-          />
+          <Image src={urlFor(image).url()} alt="" width="100" height="100" />
         </div>
         <p className={styles.postDescription}>{description}</p>
       </div>
